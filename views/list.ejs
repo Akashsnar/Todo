@@ -1,0 +1,22 @@
+<%- include("header")-%>
+    <div class="box" id="heading">
+        <h1 style="color: blue;">It's a <%= DAY %></h1>
+    </div>
+
+    <div class="box">
+
+        <% for (var i =1; i < newitem.length;  i++ ) { %>
+            <div class="item">
+<input type="checkbox" name="" id="">
+<p><%= newitem[i] %></p>             
+</div>
+           <%#  will output the numbers 1-10 %>
+           <% } %>
+
+    <form action="/" method="post">
+<input type="text" name="newitem" placeholder="New item">
+<button type="submit" name="btnsub" value=<%= DAY %>>+</button>
+    </form>
+</div>
+</body>
+</html>
